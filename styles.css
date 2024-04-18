@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    color: rgb(0, 0, 0);
+}
+
 .header{
     display: flex;
     justify-content: center;
@@ -14,34 +18,86 @@
     font-family: Candara, 'Times New Roman', Times, serif;
 }
 
+.notch{
+    z-index: 50;
+    top: 80px;
+    left: calc(50% - 88px);
+    position: absolute;
+    background: #000000;
+    width: 180px;
+    height: 30px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.camera{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: .2rem solid #1e1f22;
+    background: #447bb5a6;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 300px;
-    width: 270px;
-    border: 1px solid black;
-    margin: 50px auto;
+    height: 650px;
+    width: 320px;
+    border: 10px solid black;
+    border-radius: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 20px 15px #33333335;
+    font-family: "PS700";
 }
 
 .display{
-    border: 1px solid black;
-    margin-top: 5px;
+    border: 1px solid gainsboro;
+    margin-top: 100px;
     height: 50px;
-    width: 250px;
+    width: 200px;
     text-align: right;
     padding: 10px;
 
 }
 
 .buttons{
-    display: flex;
+
     justify-content: center;
     flex-wrap: wrap;
+    gap: 6px;
 }
 
 button{
     height: 50px;
     width: 50px;
-    font-weight:bold ;
+    border-radius: 15px;
+    border-color: azure;
+    background-color: azure;
+    font-weight: bold ;
+}
+
+#AC{
+    width: 120px;
+}
+
+#button0{
+    width: 120px;
+}
+
+.row2{
+    display: flex;
+    gap: 10px;
+}
+
+.row3{
+    display: flex;
+    gap: 10px;
+}
+
+.row4{
+    display: flex;
+    gap: 10px;
 }
